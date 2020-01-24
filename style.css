@@ -74,6 +74,7 @@ button{
   box-shadow: 1px 3px #37b57e;
   color: white;
   background-color: hsl(154, 59%, 51%);
+  border-color: hsl(154, 59%, 51%);
   width: 100%;
   padding: .8em;
   font-size: 14px;
@@ -155,7 +156,6 @@ footer{
   }
 
   button{
-    
     border-radius: 10px;
   }
 
