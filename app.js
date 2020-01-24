@@ -38,10 +38,13 @@ function validateLastName(e) {
     function validateEmail(e) {
       const email = document.querySelector('.email');
       const re = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/;
-      if(!email.value || !re.test(email.value)){
+      if(!email.value){
         //errorMessage();
         console.log('bad email');
-      } else{
+      }else if(!re.test(email.value)){
+        console.log('Looks like that is not an email');
+      }
+      else{
         //successMessage();
         console.log('thanks');
       }
@@ -50,14 +53,20 @@ function validateLastName(e) {
 
     function validatePassword(e) {
       const password = document.querySelector('.password');
-      const re = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/;
-      if(!password.value || !re.test(password.value)){
+      var re = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})");
+
+      if(!password.value){
         //errorMessage();
         console.log('bad password');
+      } else if(!re.test(password.value)){
+        console.log('password must have ...')
       } else{
         //successMessage();
-        console.log('thanks');
+      console.log('thanks');
       }
+      
+       
+      
       e.preventDefault();
     }
 
