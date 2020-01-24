@@ -9,16 +9,23 @@ button.addEventListener('click', validatePassword);
 
 
 function validateFirstName(e) {
+  //first name input
   const firstName = document.querySelector('.first-name');
+  //first name input error message
   const message = document.getElementById('first-name')
+
   if(!firstName.value){
     //errorMessage();
     message.style.color = "hsl(0, 100%, 74%)";
+    firstName.style.border = " solid hsl(0, 100%, 74%)";
+    firstName.placeholder = "";
+    firstName.style.background = "url(/images/icon-error.svg) no-repeat";
     
   } else{
     //successMessage();
-    console.log('good first name');
     message.style.color = 'white';
+    firstName.style.border = " solid green";
+    firstName.style.background = "";
   }
   e.preventDefault();
 }
@@ -28,10 +35,14 @@ function validateLastName(e) {
   const message = document.getElementById('last-name')
   if(!lastName.value){
     message.style.color = "hsl(0, 100%, 74%)";
+    lastName.style.border = " solid hsl(0, 100%, 74%)";
+    lastName.placeholder = "";
+    lastName.style.background = "url(/images/icon-error.svg) no-repeat";
   } else{
     //successMessage();
-    console.log('good last name');
     message.style.color = 'white';
+    lastName.style.border = " solid green";
+    lastName.style.background = "";
   }
   e.preventDefault();
 }
@@ -43,14 +54,18 @@ function validateLastName(e) {
       const re = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/;
       if(!email.value){
         message.style.color = "hsl(0, 100%, 74%)";
+        email.style.border = " solid hsl(0, 100%, 74%)";
+        email.placeholder = "";
+        email.style.background = "url(/images/icon-error.svg) no-repeat";
       }else if(!re.test(email.value)){
         //needs to be a div that's added below input field
         console.log('Looks like that is not an email');
       }
       else{
         //successMessage();
-        console.log('thanks');
         message.style.color = 'white';
+        email.style.border = " solid green";
+        email.style.background = "";
       }
       e.preventDefault();
     }
@@ -63,10 +78,14 @@ function validateLastName(e) {
       if(!password.value){
         //errorMessage();
         message.style.color = "hsl(0, 100%, 74%)";
+        password.style.border = " solid hsl(0, 100%, 74%)";
+        password.placeholder = "";
+        password.style.background = "url(/images/icon-error.svg) no-repeat";
       } else{
         //successMessage();
-      console.log('thanks');
       message.style.color = 'white';
+      password.style.border = " solid green";
+      password.style.background = ""
       }
       
        
