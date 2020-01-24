@@ -15,6 +15,7 @@ function validateFirstName(e) {
   if(!firstName.value){
     //errorMessage();
     message.style.color = "hsl(0, 100%, 74%)";
+    firstName.placeholder = "bad name";
   } else{
     //successMessage();
     console.log('good first name');
