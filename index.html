@@ -39,9 +39,13 @@
       </div>
       <form>
         <input type="text" name="first-name" class="first-name" placeholder="First Name"> </input>
+        <div class="errorMessage" id="first-name">First Name Cannot Be Empty</div>
         <input type="text" name="last-name" class="last-name" placeholder="Last Name"> </input>
+        <div class="errorMessage" id="last-name">Last Name Cannot Be Empty</div>
         <input type="text" name="email" class="email" placeholder="Email Address"> </input>
+        <div class="errorMessage" id="email">Looks Like That's Not An Email</div>
         <input type="password" name="password" class="password" placeholder="Password"> </input>
+        <div class="errorMessage" id="password">Password Cannot Be Empty</div>
         <button type="button" class="button">
           <p>CLAIM YOUR FREE TRIAL</p>
         </button>

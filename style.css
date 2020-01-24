@@ -64,6 +64,14 @@ input{
   padding: 2.5em;
 }
 
+.errorMessage{
+  font-size: 10px;
+  color: white;
+  /*color: hsl(0, 100%, 74%);*/
+  text-align: right;
+  margin: 0;
+}
+
 ::placeholder{
   font-weight: bold;
   font-size: 14px;
