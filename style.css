@@ -10,13 +10,13 @@ body{
   background-color: hsl(0, 100%, 74%) ;
   background-image: url("images/bg-intro-mobile.png");
   height: 100%;
+  width: 100%;
 
 }
 
 .learn{
   padding-top: 1em;
   text-align: center;
-
 }
 
 .see{
@@ -34,10 +34,9 @@ body{
   padding: .8em;
   text-align: center;
   font-size: 16px;
+  box-shadow: 1px 6px #d96667;
   
 }
-
-
 
 span{
   font-weight: bold;
@@ -51,6 +50,7 @@ form{
   color: gray;
   border: 1px solid gray;
   border-radius: 10px;
+  box-shadow: 1px 6px #d96667;
 }
 
 input{
@@ -70,7 +70,8 @@ input{
 }
 
 button{
-  border: solid 1px white;
+  /*border: solid 1px white;*/
+  box-shadow: 1px 3px #37b57e;
   color: white;
   background-color: hsl(154, 59%, 51%);
   width: 100%;
@@ -91,12 +92,75 @@ button{
 .disclaimer span{
   color: hsl(0, 100%, 74%) ;
 }
+.extra{
+  padding: 2em;
+}
 
 footer{
-  padding: 1.5em;
+  color: gray;
+ 
 }
 
 
 @media (min-width: 768px) {  }
 
-@media (min-width: 992px) {  }
+@media (min-width: 992px) { 
+
+  .container{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+  }
+  .top-div{
+    padding: 8vh;
+    width: 40%;
+    height: 100%;
+    
+  }
+  .learn{
+    font-size: 1.5em;
+    margin-top: 6em;
+    text-align: left;
+    width: 100%;
+  }
+
+  .see{
+  font-size: 13px;
+   text-align: left;
+   margin-left: 0em;
+   margin-right: 0em;
+   padding: 0;
+  }
+
+  .bottom-div{
+    margin-top: 10vh;
+    width: 60%;
+    height: 100%;
+    margin-bottom: 10vh;
+  }
+
+  .try-it{
+    width: 95%;
+   margin-left: 0;
+   
+  }
+
+  form{
+    width: 90%;
+    /*box-shadow: 1px 6px #d96667;*/
+  }
+
+  input{
+    width: 90%;
+  }
+
+  button{
+    
+    border-radius: 10px;
+  }
+
+  footer{
+    padding: 0;
+  }
+ 
+ }
