@@ -11,14 +11,14 @@ button.addEventListener('click', validatePassword);
 function validateFirstName(e) {
   const firstName = document.querySelector('.first-name');
   const message = document.getElementById('first-name')
-  //const re = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/;
   if(!firstName.value){
     //errorMessage();
     message.style.color = "hsl(0, 100%, 74%)";
-    firstName.placeholder = "bad name";
+    
   } else{
     //successMessage();
     console.log('good first name');
+    message.style.color = 'white';
   }
   e.preventDefault();
 }
@@ -26,13 +26,12 @@ function validateFirstName(e) {
 function validateLastName(e) {
   const lastName = document.querySelector('.last-name');
   const message = document.getElementById('last-name')
-  //const re = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/;
   if(!lastName.value){
-    //errorMessage();
     message.style.color = "hsl(0, 100%, 74%)";
   } else{
     //successMessage();
     console.log('good last name');
+    message.style.color = 'white';
   }
   e.preventDefault();
 }
@@ -51,6 +50,7 @@ function validateLastName(e) {
       else{
         //successMessage();
         console.log('thanks');
+        message.style.color = 'white';
       }
       e.preventDefault();
     }
@@ -63,11 +63,10 @@ function validateLastName(e) {
       if(!password.value){
         //errorMessage();
         message.style.color = "hsl(0, 100%, 74%)";
-      } else if(!re.test(password.value)){
-        console.log('password must have ...')
       } else{
         //successMessage();
       console.log('thanks');
+      message.style.color = 'white';
       }
       
        
