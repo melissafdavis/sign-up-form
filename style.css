@@ -69,6 +69,7 @@ input img{
 
 .errorMessage{
   font-size: 12px;
+  font-style: italic;
   color: white;
   text-align: right;
   margin: 0;
@@ -116,7 +117,22 @@ footer{
 
 
 /*tablet*/
-@media (min-width: 768px) {  }
+@media (min-width: 768px) { 
+  .see{
+   
+  }
+
+  input{
+    width: 90%;
+  }
+ 
+  .try-it{
+      width: 74%;
+      margin: auto;
+      margin-bottom:  2em;
+    
+  }
+ }
 
 /*desktop*/
 @media (min-width: 992px) { 
@@ -143,14 +159,16 @@ section{
 
   
   .learn{
-    font-size: 1.5em;
-    margin-top: 6em;
+    font-size: 2em;
+    margin-top: 3em;
     text-align: left;
     width: 100%;
+
+    
   }
 
   .see{
-  font-size: 13px;
+  font-size: 18px;
    text-align: left;
    margin-left: 0em;
    margin-right: 0em;
