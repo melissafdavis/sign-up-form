@@ -113,13 +113,14 @@ button{
   padding: 1em;
 }
 
+footer{
+  display: none;
+}
+
 
 
 /*tablet*/
 @media (min-width: 768px) { 
-  .see{
-   
-  }
 
   input{
     width: 90%;
@@ -154,6 +155,7 @@ section{
     width: 60%;
     height: 100%;
     margin-bottom: 10vh;
+  
   }
 
   
@@ -194,8 +196,13 @@ section{
     border-radius: 10px;
   }
 
+  .extra{
+    display: none;
+  }
+
   footer{
-    padding: 0;
+    display: block;
+    
   }
  
  }
