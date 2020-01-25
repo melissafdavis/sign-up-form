@@ -117,6 +117,10 @@ footer{
   display: none;
 }
 
+.attribution{
+  color: white;
+}
+
 
 
 /*tablet*/
@@ -203,6 +207,10 @@ section{
   footer{
     display: block;
     
+  }
+
+  .attribution{
+    color: gray;
   }
  
  }
